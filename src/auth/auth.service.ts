@@ -37,8 +37,13 @@ export class AuthService {
 
   // 3. Login (Generate JWT)
   async login(user: any) {
-    // The brief says we need roles in the token [cite: 23]
-    const payload = { email: user.email, sub: user.id, role: user.role }; 
+    const payload = { 
+      username: user.email, 
+      sub: user.id, 
+      role: user.role,
+      firstName: user.firstName 
+    };
+    
     return {
       access_token: this.jwtService.sign(payload),
     };
