@@ -1,0 +1,10 @@
+packages: []
+
+allowBuilds:
+  "@nestjs/core": false
+  "bcrypt": true
+  "sqlite3": true
+  "unrs-resolver": true
+  "fsevents": true
+
+strictDepBuilds: true

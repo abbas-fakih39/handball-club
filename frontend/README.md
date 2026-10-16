@@ -71,3 +71,10 @@ export default defineConfig([
   },
 ])
 ```
+
+## Package manager
+
+Use pnpm 10.32.1, pinned in `package.json`. Install it with
+`npm install --global pnpm@10.32.1`, then run `pnpm install --frozen-lockfile`
+in this directory. Keep `pnpm-lock.yaml` in version control. Review new
+dependency build-script requests before editing `pnpm-workspace.yaml`.
